@@ -372,6 +372,7 @@ a{
 .marketplace {
   padding: 190px 0 335px 0;
   background: rgba(255, 255, 255, 0.07);
+  overflow: hidden;
 }
 .marketplace__container {}
 
@@ -380,6 +381,8 @@ a{
 }
 .marketplace__left-side {
   flex: 0 1 650px;
+  position: relative;
+  z-index: 3;
 }
 .marketplace__title {
   margin: 0 0 35px 0;
