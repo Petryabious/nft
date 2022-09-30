@@ -246,11 +246,14 @@ a{
   
 }
 .card-features__price-num {
+
+}
+.price-num{
   font-size: 16px;
   padding-left: 20px;
   position: relative;
 }
-.card-features__price-num::before{
+.price-num::before{
   content: "";
   background: url("../img/features/price.png");
   position: absolute;
@@ -415,4 +418,65 @@ a{
 .marketplace__img_3 {
   bottom: -65%;
   left: 22%;
+}
+
+
+.activity {
+  padding: 105px 0 125px 0;
+}
+.activity__container {}
+
+.activity__top {
+  padding-right: 76px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin: 0 0 85px 0;
+}
+.features__title {}
+
+.features__get-more {}
+
+.activity__body {}
+.activity__slider {
+  display: flex;
+  margin: 0 -15px;
+}
+.activity__column {
+  flex: 0 1 33.333%;
+  padding: 0 15px;
+}
+.activity__item {}
+.item__activity {}
+.item__activity__img {
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 0 0 87% 0;
+  margin: 0 0 20px 0;
+}
+
+.item__activity__contant {}
+.item__activity__contant>*:not(:last-child) {
+  margin: 0 0 15px 0;
+}
+.item__activity__text {}
+.card-features__price-num {}
+
+.activity__slider  .slick-arrow{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  border: none;
+  width: 12px;
+  height: 21px;
+  top: -25.5%;
+  right: 2%;
+  cursor: pointer;
+}
+.activity__slider  .slick-arrow.slick-prev{
+  background: url("../img/features/left-arrow.svg") 0 0 / 100% no-repeat;
+  right: 5%;
+}
+.activity__slider  .slick-arrow.slick-next{
+  background: url("../img/features/right-arrow.svg") 0 0 / 100% no-repeat;
 }

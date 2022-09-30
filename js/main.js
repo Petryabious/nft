@@ -38,38 +38,32 @@ $(document).ready(function() {
               }
           },
       ]
-        /* mobileFirst:true, */
-        /* responsive: [
-        {
-          breakpoint: 1025,
-          settings: {
-            slidesToShow: 3.5,
-            slidesToScroll: 1,
+        
+      });
+
+      $('.activity__slider').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 552,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              arrows: false
+            }
+          },
+          {
+            breakpoint: 400,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false
+            }
           }
-        },
-        {
-          breakpoint: 751,
-          settings: {
-            slidesToShow: 2.5,
-            slidesToScroll: 1,
-          }
-        },
-        {
-          breakpoint: 530,
-          settings:{
-            slidesToShow: 1.5,
-            slidesToScroll: 1,
-            autoplay:true,
-          }
-        },
-        {
-          breakpoint: 401,
-          settings:{
-            arrows: false,
-            autoplay:true,
-          }
-        }
-      ], */
+        ]
         
       });
 });
