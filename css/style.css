@@ -68,6 +68,7 @@ a{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.72;
+  
 }
 .title_fz48{
   font-size: 48px;
@@ -109,6 +110,8 @@ a{
   padding: 90px 0 170px 0;
   position: relative;
   z-index: 1;
+  
+
 }
 .main-block__text {
   font-family: 'Josefin Sans';
@@ -118,6 +121,11 @@ a{
   letter-spacing: 0.1em;
   color: #FFFFFF;
   margin: 0 0 25px 0;
+  animation-name: leftToRightlev1;
+  animation-duration: 2.5s;
+  animation-delay: .7s;
+  animation-timing-function: easy-out;
+  animation-fill-mode: backwards;
 }
 .main-block__title {
   font-family: 'Josefin Sans';
@@ -126,6 +134,11 @@ a{
   line-height: 1;
   letter-spacing: 0.1em;
   margin: 0 0 25px 0;
+  animation-name: leftToRightlev1;
+  animation-duration: 2.5s;
+  animation-delay: .7s;
+  animation-timing-function: easy-out;
+  animation-fill-mode: backwards;
 }
 .main-block__subtitle {
   font-weight: 400;
@@ -133,9 +146,19 @@ a{
   line-height: 1.75;
   letter-spacing: -0.02em;
   margin: 0 0 30px 0;
+  animation-name: leftToRightlev2;
+  animation-duration: 2.5s;
+  animation-delay: .7s;
+  animation-timing-function: easy-out;
+  animation-fill-mode: backwards;
 }
 .main-block__get-more {
   margin: 0 0 70px 0;
+  animation-name: leftToRightlev3;
+  animation-duration: 2.5s;
+  animation-delay: .7s;
+  animation-timing-function: easy-out;
+  animation-fill-mode: backwards;
 }
 
 
@@ -144,6 +167,11 @@ a{
   gap: 45px;
   font-weight: 600;
   color: rgba(255, 255, 255, 0.5);
+  animation-name: textUp;
+  animation-duration: 2.5s;
+  animation-delay: .7s;
+  animation-timing-function: easy-out;
+  animation-fill-mode: backwards;
 }
 
 .main-block__span{
@@ -198,8 +226,11 @@ a{
 }
 
 .features__item {
-
  padding: 0 15px;
+ transition: all .3s ease-in;
+}
+.features__item:hover{
+  transform:  scale(0.98);
 }
 .card-features {
 
@@ -210,8 +241,10 @@ a{
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.2);
   overflow: hidden;
+  cursor: pointer;
   
 }
+
 .card-features__top {
   padding: 0 0 87% 0;
   
@@ -284,6 +317,11 @@ a{
 
 .card-features__btn:hover{
   background: #a7850b;
+  transform: translateY(-3px);
+}
+.card-features__btn:active{
+  transform: translateY(0px);
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.1))
 }
 
 .features__slider .slick-arrow{
@@ -479,4 +517,80 @@ a{
 }
 .activity__slider  .slick-arrow.slick-next{
   background: url("../img/features/right-arrow.svg") 0 0 / 100% no-repeat;
+}
+
+
+.footer {
+  padding: 75px 0 90px 0;
+  border-top: 1px solid #958F8F;
+}
+.footer__container {}
+
+.footer__contant {
+  display: flex;
+}
+.footer__community {
+  margin: 0 160px 0 0;
+}
+.footer__community-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0 0 25px 0;
+}
+.footer__social-network {
+  margin: 0 0 -30px 0;
+}
+.footer__link {
+  display: inline-flex;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 4px;
+  transition: all .3s ease-in 0s;
+  
+}
+.footer__link:not(:last-child){
+  margin: 0 15px 30px 0;
+}
+.footer__link:hover{
+  background: #FDC500;
+  transform: scale(1.1);
+}
+.footer__social-network:hover .footer__link:not(:hover){
+  transform: scale(0.92);
+}
+.footer__menu {
+  margin: 0 130px 0 0;
+}
+.footer__title {
+  font-size: 16px;
+  line-height: 2.1;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  margin: 0 0 10px 0;
+}
+.footer__list {}
+
+.list-footer {}
+.list-footer__item {}
+.list-footer__link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2.1;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  transition: all .3s ease-in 0s;
+}
+.list-footer__link:hover{
+  color: #FDC500;
+}
+.footer__info {}
+
+.icon{
+
 }

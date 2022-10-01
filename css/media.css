@@ -57,6 +57,10 @@
     .main-block__left-side{
         flex: 0 1 100%;
     }
+
+    .footer__community,.footer__menu  {
+        margin: 0 70px 0 0;
+    }
 }
 
 
@@ -76,6 +80,16 @@
     .activity {
         padding: 50px 0;
       }
+      .footer__community,.footer__menu  {
+        margin: 0;
+    }
+    .footer__contant{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer {
+        padding: 50px 0;
+    }
 }
 
 @media (max-width: 684px) {
@@ -172,5 +186,7 @@
     .marketplace{
         padding: 70px 0;
     }
-    
+    .footer__link:not(:last-child){
+        margin: 0 25px 30px 0;
+      }
 }
