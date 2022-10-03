@@ -461,6 +461,7 @@ a{
 
 .activity {
   padding: 105px 0 125px 0;
+
 }
 .activity__container {}
 
@@ -479,10 +480,12 @@ a{
 .activity__slider {
   display: flex;
   margin: 0 -15px;
+  
 }
 .activity__column {
   flex: 0 1 33.333%;
   padding: 0 15px;
+  position: relative;
 }
 .activity__item {}
 .item__activity {}
@@ -519,7 +522,33 @@ a{
   background: url("../img/features/right-arrow.svg") 0 0 / 100% no-repeat;
 }
 
+.activity__slider .slick-dots{
+  
+  display: flex;
+  position: absolute;
+  bottom: -15%;
+  left: 50%;
+  transform: translateX(-50%);
+} 
+.activity__slider .slick-dots li{
+  margin: 0 6px;
+}
+.activity__slider .slick-dots li button{
+  font-size: 0;
+  letter-spacing: 0;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  
+  background: #7ACCC8;
+}
 
+.activity__slider .slick-dots li.slick-active button{
+  background: #FFF72A;
+  transform: scale(1.2);
+}
+/* ----footer------ */
 .footer {
   padding: 75px 0 90px 0;
   border-top: 1px solid #958F8F;

@@ -78,7 +78,7 @@
 
 @media (max-width: 768px) {
     .activity {
-        padding: 50px 0;
+        padding: 50px 0 70px 0;
       }
       .footer__community,.footer__menu  {
         margin: 0;

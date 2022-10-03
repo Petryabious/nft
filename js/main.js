@@ -46,13 +46,16 @@ $(document).ready(function() {
         slidesToShow: 3,
         slidesToScroll: 1,
         arrows: true,
+        dots: false,
         responsive: [
           {
             breakpoint: 552,
             settings: {
               slidesToShow: 2,
               slidesToScroll: 1,
-              arrows: false
+              arrows: false,
+              autoplay: true,
+              dots: true,
             }
           },
           {
@@ -60,7 +63,8 @@ $(document).ready(function() {
             settings: {
               slidesToShow: 1,
               slidesToScroll: 1,
-              arrows: false
+              arrows: false,
+              dots: true,
             }
           }
         ]
